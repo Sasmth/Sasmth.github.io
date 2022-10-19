@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Contact</title>
+   <link rel=stylesheet href= style.css type= text/css >
+   <script>
+    function Kirim(){
+      var Nama = document.getElementById("nama").value;
+      var Email = document.getElementById("email").value;
+      var Pesan = document.getElementById("pesan").value;
+      if ( Pesan != ""){
+        alert ("Pesan Berhasil Terkirim");
+        return false;
+      }
+      else{
+        alert("Pesan tidak boleh kosong!!");
+     }
+     }
+   </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Warung Curhat</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="about.html">Biografi</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="home.html">Back Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="courses">
+            <form method="post">
+               <h4>Berikan Kritik dan Saranmu Terhadap Website Saya</h4>
+               <fieldset>
+               <legend>Silahkan tulis pesanmu di sini..</legend>
+                Nama:
+                <input type="text" id="nama" name="nama">
+                <br>
+                <br> 
+                Email:
+                <input type="text" id="email" name="email">
+                <br>
+                <br>
+                 <label>Pesan</label><br>
+                 <textarea cols="50" rows="5" id="pesan" required></textarea>
+               <p>
+                <input type="button" value="kirim" id="kirim" onclick="Kirim()"/>
+                 <input type="reset" value="Reset">
+               </p>
+               </fieldset>
+            </form>    
+        </section>
+        <aside>
+            <section class="Akun Sosmed">
+                <h2>Akun Media Sosial</h2>
+                <a href="http://instagram.com/ssmhita_25"><img src="D:/Instagram.jpg" 
+                    width="30" height="30" alt="Instagram"><p>Instagram</p></a>
+                <a href="https://www.youtube.com/channel/UCE8OkMpyGlpP6cw-3-_-mlw">
+                    <img src="images/youtube-logo.png" 
+                    width="30" height="30" alt="youtube"><p>Youtube</p></a>
+            </section>
+            <section class="contact-details">
+                <h2>Email Resmi</h2>
+                <p>Email:sasmita25@gmail.com</p>
+            </section>
+        </aside>
+        <footer>
+            &copy; 2022 Website Pribadi
+        </footer>
+    </div>
+
+</body>
+</html>

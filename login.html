@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Login</title>
+   <link rel=stylesheet href= style.css type= text/css >
+   <script>
+      function validate(){
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      if ( username == "Sasmita" && password == "123dan456"){
+        alert ("Login successfully");
+        window.location = "dashboard.html";
+        return false;
+      }
+      else{
+        alert("error!!");
+     }
+     }
+    </script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Warung Curhat</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Back Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="courses">
+        <div align="center">
+            <br><br><br><br>
+            <h4>Silahkan login terlebih dahulu</h4>
+            <form id="form_id" method="post" name="myform">
+                Username :
+                <input type="text" name="username" id="username"/><br><br>
+                Password :
+                <input type="password" name="password" id="password"/><br><br>
+                <input type="button" value="Login" id="submit" onclick="validate()"/>
+                </form>
+        </div>
+        </section>  
+        <aside>
+            <section class="Akun Sosmed">
+                <h2>Akun Media Sosial</h2>
+                <a href="http://instagram.com/ssmhita_25"><img src="D:/Instagram.jpg" 
+                    width="30" height="30" alt="Instagram"><p>Instagram</p></a>
+                <a href="https://www.youtube.com/channel/UCE8OkMpyGlpP6cw-3-_-mlw">
+                    <img src="images/youtube-logo.png" 
+                    width="30" height="30" alt="youtube"><p>Youtube</p></a>
+            </section>
+            <section class="contact-details">
+                <h2>Email Resmi</h2>
+                <p>Email:sasmita25@gmail.com</p>
+            </section>
+        </aside>
+        <footer>
+            &copy; 2022 Website Pribadi
+        </footer>
+    </div>
+
+</body>
+</html>
